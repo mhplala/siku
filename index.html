@@ -381,15 +381,20 @@
 
   <article class="feat-row feat-row-reverse">
     <div class="feat-art-large">
+      <!-- AI 对话: 上下两个气泡 + 连接虚线, 内含 dashed text marks 暗示文字 -->
       <svg viewBox="0 0 200 200" aria-hidden="true">
         <g class="anim-strokes">
-          <rect x="20" y="50" width="76" height="32" rx="16" fill="none" stroke="currentColor" stroke-width="1.4"/>
-          <text x="34" y="73" font-family="serif" font-size="16" fill="currentColor">解</text>
-          <text x="60" y="73" font-family="serif" font-size="14" fill="currentColor" opacity="0.5">字面意</text>
-          <rect x="104" y="118" width="76" height="32" rx="16" fill="none" stroke="currentColor" stroke-width="1.4"/>
-          <text x="118" y="141" font-family="serif" font-size="14" fill="currentColor" opacity="0.5">出於</text>
-          <text x="146" y="141" font-family="serif" font-size="16" fill="currentColor">《禮》</text>
-          <path d="M50 90 Q 80 105 100 115" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3"/>
+          <!-- User bubble (top-left) -->
+          <rect x="22" y="34" width="100" height="42" rx="21" fill="none" stroke="currentColor" stroke-width="1.4"/>
+          <line x1="38" y1="52" x2="108" y2="52" stroke="currentColor" stroke-width="0.9" opacity="0.4"/>
+          <line x1="38" y1="62" x2="86" y2="62" stroke="currentColor" stroke-width="0.9" opacity="0.4"/>
+          <!-- AI bubble (bottom-right) -->
+          <rect x="78" y="122" width="100" height="48" rx="24" fill="currentColor" fill-opacity="0.05" stroke="currentColor" stroke-width="1.4"/>
+          <line x1="94" y1="138" x2="164" y2="138" stroke="currentColor" stroke-width="0.9" opacity="0.4"/>
+          <line x1="94" y1="148" x2="164" y2="148" stroke="currentColor" stroke-width="0.9" opacity="0.4"/>
+          <line x1="94" y1="158" x2="142" y2="158" stroke="currentColor" stroke-width="0.9" opacity="0.4"/>
+          <!-- Connector hint -->
+          <path d="M70 82 Q 88 100 92 122" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3 4" opacity="0.4"/>
         </g>
       </svg>
     </div>
@@ -402,15 +407,17 @@
 
   <article class="feat-row">
     <div class="feat-art-large">
+      <!-- 三主题: 三个 horizontal pill swatch, 只有墨实色填充 -->
       <svg viewBox="0 0 200 200" aria-hidden="true">
         <g class="anim-strokes">
-          <circle cx="100" cy="100" r="58" fill="none" stroke="currentColor" stroke-width="1.4"/>
-          <path d="M100 42 A58 58 0 0 1 100 158" fill="currentColor" fill-opacity="0.92"/>
-          <line x1="100" y1="42" x2="100" y2="158" stroke="currentColor" stroke-width="1"/>
-          <text x="62" y="106" font-family="serif" font-size="14" fill="currentColor">紙</text>
-          <text x="92" y="106" font-family="serif" font-size="14" fill="white">墨</text>
-          <text x="124" y="106" font-family="serif" font-size="14" fill="currentColor">雪</text>
+          <rect x="40" y="42" width="120" height="34" rx="17" fill="none" stroke="currentColor" stroke-width="1.4"/>
+          <rect x="40" y="84" width="120" height="34" rx="17" fill="none" stroke="currentColor" stroke-width="1.4"/>
+          <rect x="40" y="126" width="120" height="34" rx="17" fill="currentColor" stroke="currentColor" stroke-width="1.4"/>
         </g>
+        <!-- Labels 不动画, 跟随 swatch 颜色 -->
+        <text x="100" y="64" font-family="serif" font-size="15" text-anchor="middle" fill="currentColor">紙</text>
+        <text x="100" y="106" font-family="serif" font-size="15" text-anchor="middle" fill="currentColor">雪</text>
+        <text x="100" y="148" font-family="serif" font-size="15" text-anchor="middle" fill="white" fill-opacity="0.95">墨</text>
       </svg>
     </div>
     <div class="feat-text">
@@ -422,22 +429,22 @@
 
   <article class="feat-row feat-row-reverse">
     <div class="feat-art-large">
+      <!-- 排版方向: 左竖排 (3 竖线 + 右起箭头), 右横排 (4 横线 + 上下箭头) -->
       <svg viewBox="0 0 200 200" aria-hidden="true">
         <g class="anim-strokes">
-          <line x1="40" y1="40" x2="40" y2="160" stroke="currentColor" stroke-width="1.4"/>
-          <line x1="60" y1="40" x2="60" y2="160" stroke="currentColor" stroke-width="1.4"/>
-          <line x1="80" y1="40" x2="80" y2="160" stroke="currentColor" stroke-width="1.4"/>
-          <text x="36" y="58" font-family="serif" font-size="14" fill="currentColor">天</text>
-          <text x="36" y="80" font-family="serif" font-size="14" fill="currentColor">行</text>
-          <text x="36" y="102" font-family="serif" font-size="14" fill="currentColor">健</text>
-          <text x="56" y="58" font-family="serif" font-size="14" fill="currentColor">君</text>
-          <text x="56" y="80" font-family="serif" font-size="14" fill="currentColor">子</text>
-          <text x="56" y="102" font-family="serif" font-size="14" fill="currentColor">以</text>
-          <line x1="118" y1="56" x2="172" y2="56" stroke="currentColor" stroke-width="1.4"/>
-          <line x1="118" y1="100" x2="172" y2="100" stroke="currentColor" stroke-width="1.4"/>
-          <line x1="118" y1="144" x2="172" y2="144" stroke="currentColor" stroke-width="1.4"/>
-          <text x="120" y="50" font-family="serif" font-size="10" fill="currentColor" opacity="0.5">繁</text>
-          <text x="160" y="50" font-family="serif" font-size="10" fill="currentColor" opacity="0.5">簡</text>
+          <!-- 竖排 column -->
+          <line x1="30" y1="50" x2="30" y2="158" stroke="currentColor" stroke-width="1.4"/>
+          <line x1="55" y1="50" x2="55" y2="158" stroke="currentColor" stroke-width="1.4"/>
+          <line x1="80" y1="50" x2="80" y2="158" stroke="currentColor" stroke-width="1.4"/>
+          <!-- 右起方向箭头 (上方) -->
+          <path d="M82 36 L28 36 M34 31 L28 36 L34 41" fill="none" stroke="currentColor" stroke-width="1" opacity="0.45"/>
+          <!-- 横排 lines -->
+          <line x1="116" y1="58" x2="180" y2="58" stroke="currentColor" stroke-width="1.4"/>
+          <line x1="116" y1="86" x2="180" y2="86" stroke="currentColor" stroke-width="1.4"/>
+          <line x1="116" y1="114" x2="180" y2="114" stroke="currentColor" stroke-width="1.4"/>
+          <line x1="116" y1="142" x2="180" y2="142" stroke="currentColor" stroke-width="1.4"/>
+          <!-- 上下方向箭头 (右侧) -->
+          <path d="M192 56 L192 144 M187 138 L192 144 L197 138" fill="none" stroke="currentColor" stroke-width="1" opacity="0.45"/>
         </g>
       </svg>
     </div>
